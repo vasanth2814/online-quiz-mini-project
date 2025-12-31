@@ -1,0 +1,17 @@
+<h2>Quiz Result</h2>
+
+<p id="finalScore"></p>
+<p id="status"></p>
+
+<a href="quiz.html">Retake Quiz</a> |
+<a href="index.html">Logout</a>
+
+<script>
+let score = localStorage.getItem("quizScore");
+document.getElementById("finalScore").innerHTML = "Score: " + score + "/3";
+
+if(score >= 2)
+  document.getElementById("status").innerHTML = "Status: PASS";
+else
+  document.getElementById("status").innerHTML = "Status: FAIL";
+</script>

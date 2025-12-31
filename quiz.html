@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="startTimer()">
+<img src="images/quiz.png" class="hero-img">
+
+<h2>Online Quiz</h2>
+<p>Time Left: <span id="timer">60</span> seconds</p>
+
+<form onsubmit="return checkAnswer()">
+
+<p>1. HTML stands for?</p>
+<input type="radio" name="q1" value="a"> Hyper Text Markup Language<br>
+<input type="radio" name="q1" value="b"> High Text Machine Language<br><br>
+
+<p>2. CSS is used for?</p>
+<input type="radio" name="q2" value="a"> Structure<br>
+<input type="radio" name="q2" value="b"> Styling<br><br>
+
+<p>3. JavaScript is a?</p>
+<input type="radio" name="q3" value="a"> Programming language<br>
+<input type="radio" name="q3" value="b"> Markup language<br><br>
+
+<button>Submit Quiz</button>
+
+</form>
+
+<button onclick="logout()">Logout</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
